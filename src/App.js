@@ -7,88 +7,387 @@ function App() {
     const [currentQuestion, setCurrentQuestion] =
         useState(0);
     const [score, setScore] = useState(0);
-
     const questions = [
         {
-            text: 'What is the capital of America?',
+            text: 'Section',
             options: [
                 {
                     id: 0,
-                    text: 'New York City',
+                    text: 'Anbegale',
                     isCorrect: false
                 },
-                { id: 1, text: 'Boston', isCorrect: false },
+                {
+                    id: 1,
+                    text: 'Akmindelige',
+                    isCorrect: false
+                },
                 {
                     id: 2,
-                    text: 'Santa Fe',
+                    text: 'Atten',
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: 'Washington DC',
+                    text: 'Afsnit',
                     isCorrect: true
                 }
             ]
         },
         {
-            text: 'What year was the Constitution of America written?',
-            options: [
-                { id: 0, text: '1787', isCorrect: true },
-                { id: 1, text: '1776', isCorrect: false },
-                { id: 2, text: '1774', isCorrect: false },
-                { id: 3, text: '1826', isCorrect: false }
-            ]
-        },
-        {
-            text: 'Who was the second president of the US?',
+            text: 'Common?',
             options: [
                 {
                     id: 0,
-                    text: 'John Adams',
+                    text: 'Almindelige',
                     isCorrect: true
                 },
                 {
                     id: 1,
-                    text: 'Paul Revere',
+                    text: 'årsager',
                     isCorrect: false
                 },
                 {
                     id: 2,
-                    text: 'Thomas Jefferson',
+                    text: 'Befarginer',
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: 'Benjamin Franklin',
+                    text: 'Bidrage',
                     isCorrect: false
                 }
             ]
         },
         {
-            text: 'What is the largest state in the US?',
+            text: 'Recommend',
             options: [
                 {
                     id: 0,
-                    text: 'California',
+                    text: 'Anbefale',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: 'Ligner',
                     isCorrect: false
                 },
-                { id: 1, text: 'Alaska', isCorrect: true },
-                { id: 2, text: 'Texas', isCorrect: false },
-                { id: 3, text: 'Montana', isCorrect: false }
+                {
+                    id: 2,
+                    text: 'Kæmpestore',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: 'Lidenskab',
+                    isCorrect: false
+                }
             ]
         },
         {
-            text: 'Which of the following countries DO NOT border the US?',
+            text: 'Anxiety',
             options: [
-                { id: 0, text: 'Canada', isCorrect: false },
-                { id: 1, text: 'Russia', isCorrect: true },
-                { id: 2, text: 'Cuba', isCorrect: true },
-                { id: 3, text: 'Mexico', isCorrect: false }
+                {
+                    id: 0,
+                    text: 'Dyb',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'Angst',
+                    isCorrect: true
+                },
+                {
+                    id: 2,
+                    text: 'Farlige',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: 'Gennemgået',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'Reason',
+            options: [
+                {
+                    id: 0,
+                    text: 'Ejer',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'Årsager',
+                    isCorrect: true
+                },
+                {
+                    id: 2,
+                    text: 'Helst',
+                    isCorrect: true
+                },
+                {
+                    id: 3,
+                    text: 'Nulstilling',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'at Deliver',
+            options: [
+                {
+                    id: 0,
+                    text: 'at Have',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'to Aflevere',
+                    isCorrect: true
+                },
+                {
+                    id: 2,
+                    text: 'to Svede',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: 'at Håbe',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Order',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Bestille',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: 'At Låne',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: 'At Vide',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: 'At Føde',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Give Birth',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Sidde',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'At Gøre',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: 'At Smutte',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: 'At Føde',
+                    isCorrect: true
+                }
+            ]
+        },
+        {
+            text: '?',
+            options: [
+                {
+                    id: 0,
+                    text: 'Almndelige',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Want',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Slip',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'At Huske',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: 'At Ville',
+                    isCorrect: true
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Release',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Slip',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: 'At Sejle',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: 'At smutte',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Avoid',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Undgår',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: 'At Skrider',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: 'To Pretend',
+            options: [
+                {
+                    id: 0,
+                    text: 'At Gøre Op',
+                    isCorrect: false
+                },
+                {
+                    id: 1,
+                    text: 'At Fordrage',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: 'At Foregive',
+                    isCorrect: true
+                },
+                {
+                    id: 3,
+                    text: 'Håbe',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: '?',
+            options: [
+                {
+                    id: 0,
+                    text: 'Almndelige',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
+            ]
+        },
+        {
+            text: '?',
+            options: [
+                {
+                    id: 0,
+                    text: 'Almndelige',
+                    isCorrect: true
+                },
+                {
+                    id: 1,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 2,
+                    text: '',
+                    isCorrect: false
+                },
+                {
+                    id: 3,
+                    text: '',
+                    isCorrect: false
+                }
             ]
         }
     ];
 
     // Helper Functions
+
+    /* */
 
     /* A possible answer was clicked */
     const optionClicked = (isCorrect) => {
