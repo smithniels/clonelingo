@@ -1,3 +1,9 @@
+// TODO: make font better
+// TODO: make text colors change depending on correct-ness
+// TODO: make the aesthetics "better"
+// TODO: randomize question order
+// TODO: probably should have question contained in a JSON (I think... Like that makes sense to me)
+
 import React, { useState } from 'react';
 import './App.css';
 
@@ -253,7 +259,7 @@ function App() {
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'At Gåre',
                     isCorrect: false
                 }
             ]
@@ -273,7 +279,7 @@ function App() {
                 },
                 {
                     id: 2,
-                    text: 'At smutte',
+                    text: 'At Smutte',
                     isCorrect: false
                 },
                 {
@@ -368,17 +374,17 @@ function App() {
                 },
                 {
                     id: 1,
-                    text: 'Til Tørst',
+                    text: 'Til Tørst', // to thirst
                     isCorrect: false
                 },
                 {
                     id: 2,
-                    text: 'Til Sult',
+                    text: 'Til Sult', // to hunger
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: 'At Rådgive',
+                    text: 'At Rådgive', //to advise
                     isCorrect: false
                 }
             ]
