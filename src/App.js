@@ -34,7 +34,7 @@ function App() {
             ]
         },
         {
-            text: 'Common?',
+            text: 'Common',
             options: [
                 {
                     id: 0,
@@ -209,26 +209,26 @@ function App() {
             ]
         },
         {
-            text: '?',
+            text: 'Fears/Concerns',
             options: [
                 {
                     id: 0,
-                    text: 'Almndelige',
+                    text: 'Månedgange',
                     isCorrect: true
                 },
                 {
                     id: 1,
-                    text: '',
+                    text: 'Nulstilling',
                     isCorrect: false
                 },
                 {
                     id: 2,
-                    text: '',
-                    isCorrect: false
+                    text: 'Befarginer',
+                    isCorrect: true
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'Nysgerrig',
                     isCorrect: false
                 }
             ]
@@ -278,7 +278,7 @@ function App() {
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'At Nyde',
                     isCorrect: false
                 }
             ]
@@ -298,12 +298,12 @@ function App() {
                 },
                 {
                     id: 2,
-                    text: '',
+                    text: 'At Synge',
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'At Opgave',
                     isCorrect: false
                 }
             ]
@@ -334,51 +334,51 @@ function App() {
             ]
         },
         {
-            text: '?',
+            text: 'To Feed',
             options: [
                 {
                     id: 0,
-                    text: 'Almndelige',
+                    text: 'At Opfodtre',
                     isCorrect: true
                 },
                 {
                     id: 1,
-                    text: '',
+                    text: 'At Oversætte',
                     isCorrect: false
                 },
                 {
                     id: 2,
-                    text: '',
+                    text: 'At Ligner', // that looks like
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'At Abandon',
                     isCorrect: false
                 }
             ]
         },
         {
-            text: '?',
+            text: 'To Impact',
             options: [
                 {
                     id: 0,
-                    text: 'Almndelige',
+                    text: 'At Påvirke',
                     isCorrect: true
                 },
                 {
                     id: 1,
-                    text: '',
+                    text: 'Til Tørst',
                     isCorrect: false
                 },
                 {
                     id: 2,
-                    text: '',
+                    text: 'Til Sult',
                     isCorrect: false
                 },
                 {
                     id: 3,
-                    text: '',
+                    text: 'At Rådgive',
                     isCorrect: false
                 }
             ]
@@ -414,20 +414,27 @@ function App() {
     return (
         <div className="App">
             {/* 1. Header  */}
-            <h1>Danish | English Quiz</h1>
+            <header>
+                <h1>Danish | English Quiz</h1>
+            </header>
 
             {/* 2. Current Score  */}
-            <h2>Score: {score}</h2>
 
             {/* 3. Show results or show the question game  */}
             {showResults ? (
                 /* 4. Final Results */
                 <div className="final-results">
                     <h1>Final Results</h1>
+                    <h2>Score: {score}</h2>
                     <h2>
                         {score} out of {questions.length}{' '}
                         correct - (
-                        {(score / questions.length) * 100}%)
+                        {(
+                            (score / questions.length) *
+                            100
+                        ).toFixed(1)}
+                        {/* toFixed is just rounding to a single decimal */}
+                        %)
                     </h2>
                     <button onClick={() => restartGame()}>
                         Restart game
@@ -464,6 +471,7 @@ function App() {
                             );
                         })}
                     </ul>
+                    <h2>Score: {score}</h2>
                 </div>
             )}
         </div>

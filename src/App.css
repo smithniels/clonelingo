@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Anek Malayalam', sans-serif;
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background-image: linear-gradient(to left, cyan, white);
   color: #11052c;
   display: flex;
   justify-content: center;
@@ -60,4 +60,13 @@ ul {
 .question-card ul .selected-answer {
   background: #ffd6ff;
   border: 1px solid #800080;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
