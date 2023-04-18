@@ -379,22 +379,22 @@ let Questions = [
         options: [
             {
                 id: 0,
-                text: '',
+                text: '', //
                 isCorrect: false
             },
             {
                 id: 1,
-                text: '', // to thirst
+                text: '', //
                 isCorrect: false
             },
             {
                 id: 2,
-                text: 'Lidenskab', // to hunger
+                text: 'Lidenskab', // Passion
                 isCorrect: true
             },
             {
                 id: 3,
-                text: '', //to advise
+                text: '', //
                 isCorrect: false
             }
         ]
