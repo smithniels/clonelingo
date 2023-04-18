@@ -1,6 +1,5 @@
 // TODO: make text colors change depending on correct-ness
 // TODO: make the aesthetics "better"
-// TODO: randomize question order
 // TODO: randomize question answers
 // TODO: probably should have question contained in a JSON (I think... Like that makes sense to me)
 
