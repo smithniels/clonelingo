@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Nunito','Anek Malayalam', sans-serif;
-  background-image: linear-gradient(to left, cyan, white);
+  background-image: linear-gradient(to left, RGB(218,41,28), white);
   color: #11052c;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   position:relative;
-  box-shadow: 10px 8px 10px 5px orange;
+  /* box-shadow: 10px 8px 10px 5px orange; */
   
 }
 
