@@ -115,7 +115,7 @@ let Questions = [
             {
                 id: 2,
                 text: 'Helst',
-                isCorrect: true
+                isCorrect: false
             },
             {
                 id: 3,
@@ -205,7 +205,7 @@ let Questions = [
             {
                 id: 0,
                 text: 'Månedgange',
-                isCorrect: true
+                isCorrect: false
             },
             {
                 id: 1,

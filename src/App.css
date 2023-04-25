@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');;
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');;
 
 .App {
   text-align: center;
-
 }
 
 body {
   font-family: 'Nunito','Anek Malayalam', sans-serif;
-  background-image: linear-gradient(to left, RGB(218,41,28), white);
   color: #11052c;
   display: flex;
   justify-content: center;
@@ -23,7 +21,8 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   position:relative;
-  /* box-shadow: 10px 8px 10px 5px orange; */
+border: 2px dashed #b1b1b1;
+  /* box-shadow: 10px 8px 10px 5px RGB(218,41,28); */ /* I'm getting tired of that border*/
   
 }
 
@@ -31,7 +30,6 @@ body {
 ul {
   list-style: none;
 }
-
 
 .question-text {
   font-size: 15px;
@@ -41,43 +39,49 @@ ul {
   font-size: 20px;
   font-weight: 500;
   margin: 0;
+  color:RGB(218,41,28) !important;
 }
 
 .question-card ul {
   margin-top: 20px;
   margin-left: -40px;
-}
+} 
 
-.question-card ul li {
+ .question-card ul li {
   text-decoration: none;
   list-style: none;
   color: #2d264b;
   font-size: 16px;
   background: #ffffff;
-  border: 1px solid #b1b1b1;
-  border-radius: 16px;
+  border: 1px solid #b1b1b1; 
+  /* border-radius: 1360px;  */
   padding: 11px;
   margin-top: 15px;
   cursor: pointer;
-  position:relative;
-}
+  position:relative; }
+
+  .question-card ul li:hover{
+    color: #FFFFFF;
+    background: RGB(218,41,28);
+    font-weight: 900;
+    font-size:16px;
+  }
 
 
-.question-card ul .selected-answer {
-  background: #ffd6ff;
+/* .question-card ul .selected-answer {
+  background: #ffd6ff !important;
   border: 1px solid #800080;
-}
+} */
 
 header h1 {
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 600;
-  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);;
+  background-image: conic-gradient(RGB(218,41,28), RGB(218,41,28), 	RGB(250, 190, 246));;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-h3{
+h3 {
   font-size: 20px !important;
-  font-weight: 950;
-}
+}  
