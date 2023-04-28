@@ -21,11 +21,10 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   position:relative;
-border: 2px dashed #b1b1b1;
+  border: 2px dashed #b1b1b1;
   /* box-shadow: 10px 8px 10px 5px RGB(218,41,28); */ /* I'm getting tired of that border*/
   
 }
-
 
 ul {
   list-style: none;
@@ -68,10 +67,10 @@ ul {
   }
 
 
-/* .question-card ul .selected-answer {
-  background: #ffd6ff !important;
+ .question-card ul .selected-answer {
+  background: purple !important;
   border: 1px solid #800080;
-} */
+} 
 
 header h1 {
   font-size: 30px;
@@ -85,3 +84,15 @@ header h1 {
 h3 {
   font-size: 20px !important;
 }  
+
+.neutral{
+  background-color:lightblue;
+}
+
+.success{
+  background-color: green;
+}
+
+.unsuccess{
+  background-color:red;
+}

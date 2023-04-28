@@ -1,5 +1,5 @@
 // FISHER-YATES Shuffle Algorithm
-// User: CoolAJ86
+// Creator: CoolAJ86 on stackoverflow
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 // Thanks! 😬
 // /Users/ehiilmnsst
@@ -19,7 +19,6 @@ function shuffle(array) {
         array[counter] = array[index];
         array[index] = temp;
     }
-
     return array;
 }
 

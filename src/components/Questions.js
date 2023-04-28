@@ -1,403 +1,1254 @@
 let Questions = [
-    {
-        text: 'Section',
-        options: [
-            {
-                id: 0,
-                text: 'Anbefale',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'Almindelige',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Atten',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'Afsnit',
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        text: 'Common',
-        options: [
-            {
-                id: 0,
-                text: 'Almindelige',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'årsager',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Befarginer',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'Bidrage',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'Recommend',
-        options: [
-            {
-                id: 0,
-                text: 'Anbefale',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'Ligner',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Kæmpestore',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'Lidenskab',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'Anxiety',
-        options: [
-            {
-                id: 0,
-                text: 'Dyb',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'Angst',
-                isCorrect: true
-            },
-            {
-                id: 2,
-                text: 'Farlige',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'Gennemgået',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'Reason',
-        options: [
-            {
-                id: 0,
-                text: 'Ejer',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'Årsager',
-                isCorrect: true
-            },
-            {
-                id: 2,
-                text: 'Helst',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'Nulstilling',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'at Deliver',
-        options: [
-            {
-                id: 0,
-                text: 'at Have',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'to Aflevere',
-                isCorrect: true
-            },
-            {
-                id: 2,
-                text: 'to Svede',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'at Håbe',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Order',
-        options: [
-            {
-                id: 0,
-                text: 'At Bestille',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'At Låne',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Vide',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Føde',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Give Birth',
-        options: [
-            {
-                id: 0,
-                text: 'At Sidde',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'At Gøre',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Smutte',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Føde',
-                isCorrect: true
-            }
-        ]
-    },
-    {
-        text: 'Fears/Concerns',
-        options: [
-            {
-                id: 0,
-                text: 'Månedgange',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'Nulstilling',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Befarginer',
-                isCorrect: true
-            },
-            {
-                id: 3,
-                text: 'Nysgerrig',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Want',
-        options: [
-            {
-                id: 0,
-                text: 'At Slip',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'At Huske',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Ville',
-                isCorrect: true
-            },
-            {
-                id: 3,
-                text: 'At Gåre',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Release',
-        options: [
-            {
-                id: 0,
-                text: 'At Slip',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'At Sejle',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Smutte',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Nyde',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Avoid',
-        options: [
-            {
-                id: 0,
-                text: 'At Undgår',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'At Skrider',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Synge',
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Opgave',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Pretend',
-        options: [
-            {
-                id: 0,
-                text: 'At Gøre Op',
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: 'At Fordrage',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Foregive',
-                isCorrect: true
-            },
-            {
-                id: 3,
-                text: 'Håbe',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Feed',
-        options: [
-            {
-                id: 0,
-                text: 'At Opfodtre',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'At Oversætte',
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'At Ligner', // that looks like
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Opgive',
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'To Impact',
-        options: [
-            {
-                id: 0,
-                text: 'At Påvirke',
-                isCorrect: true
-            },
-            {
-                id: 1,
-                text: 'Til Tørst', // to thirst
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Til Sult', // to hunger
-                isCorrect: false
-            },
-            {
-                id: 3,
-                text: 'At Rådgive', //to advise
-                isCorrect: false
-            }
-        ]
-    },
-    {
-        text: 'Passion',
-        options: [
-            {
-                id: 0,
-                text: '', //
-                isCorrect: false
-            },
-            {
-                id: 1,
-                text: '', //
-                isCorrect: false
-            },
-            {
-                id: 2,
-                text: 'Lidenskab', // Passion
-                isCorrect: true
-            },
-            {
-                id: 3,
-                text: '', //
-                isCorrect: false
-            }
-        ]
-    }
+  {
+    text: 'Section',
+    options: [
+      {
+        id: 0,
+        text: 'anbefale',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'almindelige',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'atten',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'afsnit',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Common',
+    options: [
+      {
+        id: 0,
+        text: 'almindelige',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'årsager',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'befarginer',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'bidrage', // contribute
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Recommend',
+    options: [
+      {
+        id: 0,
+        text: 'anbefale',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'ligner',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'kæmpestore',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'lidenskab',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Anxiety',
+    options: [
+      {
+        id: 0,
+        text: 'dyb',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'angst',
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'farlige',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'gennemgået',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Reason',
+    options: [
+      {
+        id: 0,
+        text: 'ejer',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'årsager',
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'helst',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'nulstilling',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Deliver',
+    options: [
+      {
+        id: 0,
+        text: 'have',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'aflevere',
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'svede',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'håbe',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Order',
+    options: [
+      {
+        id: 0,
+        text: 'bestille',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'låne',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'Vide',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'føde',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Give Birth',
+    options: [
+      {
+        id: 0,
+        text: 'sidde',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'gøre',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'smutte', // slip away
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'føde',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Fears/Concerns',
+    options: [
+      {
+        id: 0,
+        text: 'månedgange',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'nulstilling',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'befarginer',
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'nysgerrig',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Want',
+    options: [
+      {
+        id: 0,
+        text: 'slip',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'huske',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'ville',
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'gåre',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Release',
+    options: [
+      {
+        id: 0,
+        text: 'slip',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'sejle',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'smutte',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'nyde',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Avoid',
+    options: [
+      {
+        id: 0,
+        text: 'adgang',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'skrider',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'synge',
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'undgår',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Pretend',
+    options: [
+      {
+        id: 0,
+        text: 'gøre op',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'fordrage',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'foregive',
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'håbe',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Feed',
+    options: [
+      {
+        id: 0,
+        text: 'opfodtre',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'oversætte',
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'ligner', // that looks like
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'ogive',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Impact',
+    options: [
+      {
+        id: 0,
+        text: 'påvirke',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'til tørst', // to thirst
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'til sult', // to hunger
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'rådgive', //to advise
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Passion',
+    options: [
+      {
+        id: 0,
+        text: 'en bakka', // a hill
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'en afdeling', //a department
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'lidenskab', // passion
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'adgang', // access
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Responsibility',
+    options: [
+      {
+        id: 0,
+        text: 'sekund', // second (time)
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'mønster', // pattern
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'et ansvar', // responsibility
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'fundet', // found
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Carry',
+    options: [
+      {
+        id: 0,
+        text: 'bære', // carry
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'bjerg', // mountain
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'enhed', // unit
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'hvile', // rest
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Care',
+    options: [
+      {
+        id: 0,
+        text: '	sædvanlig', // usual
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'nogensinde', // ever
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: '	sædvanlig', // usual
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '	pleje', // care
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Leave',
+    options: [
+      {
+        id: 0,
+        text: 'måle', // measure
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'talord', // number
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'forlade', // leave
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'fylde', // fill
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Eighteen',
+    options: [
+      {
+        id: 0,
+        text: 'atten', // eighteen
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'syttende', // seventeen
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'svede', // sweat
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'tretten', // thirteen
+        isCorrect: false,
+      },
+    ],
+  },
+  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< reset everything below here
+  {
+    text: 'Nineteen',
+    options: [
+      {
+        id: 0,
+        text: 'syv',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'nitten', //
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'seksten', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'sytten', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Curious',
+    options: [
+      {
+        id: 0,
+        text: 'nysgerrig', // curious
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'fordrage', // endure
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'farlige', // dangerous
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'låne', // loan
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Singular',
+    options: [
+      {
+        id: 0,
+        text: '', //  (
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'ental', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Contribute',
+    options: [
+      {
+        id: 0,
+        text: 'nulstilling', // reset
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'dobbelt', // double
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'bidrage', // contribute
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'måle', // measure
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Enjoy',
+    options: [
+      {
+        id: 0,
+        text: '	', // usual
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'nyde', //
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'punktum', // period
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '	', //
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Pattern',
+    options: [
+      {
+        id: 0,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'mønster', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Usual',
+    options: [
+      {
+        id: 0,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'sædvanlig', // usual
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Period',
+    options: [
+      {
+        id: 0,
+        text: 'punktum',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'periode', // period
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'sigtelse', // Charge
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'yndig', // adorable
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Charge',
+    options: [
+      {
+        id: 0,
+        text: 'sigtelse', // charge
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'drab', // murder
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Adorable',
+    options: [
+      {
+        id: 0,
+        text: '', //  (
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'yndig', // adorable
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Property',
+    options: [
+      {
+        id: 0,
+        text: 'lønindkomst', // salary
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'bemærk', // note
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'indkomst', // income
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'ejendom', // property
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Turn',
+    options: [
+      {
+        id: 0,
+        text: 'dreje', // turn
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'svar', // answer
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'blyant', // pencil
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'sukker', // sugar
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Degrades',
+    options: [
+      {
+        id: 0,
+        text: 'sigtelse', // charges
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'opgraderinger', // upgrades
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'nedbryder', // degrades
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: 'holdt', // kept
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Addictive',
+    options: [
+      {
+        id: 0,
+        text: 'ulykkelig', // unhappy
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'trist', // sad
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'ureguleret', // unregulated
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'afhængighedsskabende', // addictive
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Brain Damage',
+    options: [
+      {
+        id: 0,
+        text: 'hjerneskade',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'leverskader', // liver damage
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'skade', // damage
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'knogleskader', // bone damage
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Ocean',
+    options: [
+      {
+        id: 0,
+        text: 'havet', // ocean
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'sand', // true
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'årsag', // reason
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'regn', // rain
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Below',
+    options: [
+      {
+        id: 0,
+        text: '',
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'siden', // the side
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'overfor', // above
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'nedenfor', //
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: '',
+    options: [
+      {
+        id: 0,
+        text: '', //
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: ' ', //a
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: '',
+    options: [
+      {
+        id: 0,
+        text: '', //  (
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: '',
+    options: [
+      {
+        id: 0,
+        text: '', //  (
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Disappeared',
+    options: [
+      {
+        id: 0,
+        text: 'sædvanlig', // usual
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'forsvandt', // disappeared
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: 'lys pære', // lightbulb
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: 'Frequently',
+    options: [
+      {
+        id: 0,
+        text: 'afsluttet', // finished
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'hyppigt', // frequently
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: '',
+    options: [
+      {
+        id: 0,
+        text: '',
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Crime',
+    options: [
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 0,
+        text: 'forbrydelser',
+        isCorrect: true,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Declares',
+    options: [
+      {
+        id: 0,
+        text: 'erklærer', //
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'udelukke', // exclude
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Exclude',
+    options: [
+      {
+        id: 0,
+        text: 'omfatte', // include
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'oplever', // experiences ~verb
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'udelukke', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Reveal',
+    options: [
+      {
+        id: 0,
+        text: 'afsløre', // reveal
+        isCorrect: true,
+      },
+      {
+        id: 1,
+        text: 'tendens', // tendency
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'sætte', // put
+        isCorrect: false,
+      },
+      {
+        id: 3,
+        text: 'ganske', // quite
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    text: 'Shade',
+    options: [
+      {
+        id: 0,
+        text: 'vaner', // habits
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: 'mørke', // darkness
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: 'skygge', // shade ~sku~guh
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '	', //
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    text: '',
+    options: [
+      {
+        id: 0,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 1,
+        text: '', //
+        isCorrect: false,
+      },
+      {
+        id: 2,
+        text: '', //
+        isCorrect: true,
+      },
+      {
+        id: 3,
+        text: '', //
+        isCorrect: false,
+      },
+    ],
+  },
 ];
 export default Questions;
