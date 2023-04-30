@@ -10,7 +10,7 @@ Adding onClick event for answers where if the {option.isCorrect}
 // TODO: add hover  --> color change for answers or add in a border (black?) while answers are bing hovered
 
 // investigate consulting contracts with vacations days
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
@@ -21,44 +21,49 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [isActive, setIsActive] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
 
-  // // Helper functions
+  // Helper functions
   const handleClick = () => {
-    // 👇️ toggle
-    setIsActive((current) => !current);
-    // console.log('handleClick');
-    // 👇️ or set to true
     setIsActive(true);
   };
 
-  /* A possible answer was clicked */
-  const optionClicked = (isCorrect) => {
-    // change color (at some point this will work...)
-    if (isCorrect) {
-      setTimeout(() => {}, 10000);
-      console.log('correct!');
-    } else {
-      console.log('incorrect!');
-    }
+  const handleAnswer = (isCorrect, optionId) => {
     // Increment score
     if (isCorrect) {
       setScore(score + 1);
     }
-    // if question # is greater than # of Questions showResults
-    if (currentQuestion + 1 < RandArray.length) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowResults(true);
-    }
+    // Set selected option
+    setSelectedOption(optionId);
+    // Wait for 1 second
+    setTimeout(() => {
+      // Move to next question or show results
+      if (currentQuestion + 1 < RandArray.length) {
+        setCurrentQuestion(currentQuestion + 1);
+      } else {
+        setShowResults(true);
+      }
+      // Reset selected option and isActive
+      setSelectedOption(null);
+      setIsActive(false);
+    }, 1000);
   };
-
-  /* Resets the game back to default */
 
   const restartGame = () => {
     setScore(0);
     setCurrentQuestion(0);
     setShowResults(false);
   };
+
+  useEffect(() => {
+    // Reset selected option and isActive after 1 second
+    if (selectedOption !== null) {
+      setTimeout(() => {
+        setSelectedOption(null);
+        setIsActive(false);
+      }, 1000);
+    }
+  }, [selectedOption]);
 
   return (
     <div className='App'>
@@ -87,12 +92,17 @@ function App() {
 
           <ul>
             {RandArray[currentQuestion].options.map((option) => {
+              const classes = classNames({
+                'selected-option': option.id === selectedOption,
+                'correct-option': isActive && option.isCorrect,
+                'incorrect-option': isActive && !option.isCorrect,
+              });
               return (
                 <li
                   key={option.id}
+                  className={classes}
                   onClick={() => {
-                    optionClicked(option.isCorrect);
-                    !isActive;
+                    handleAnswer(option.isCorrect, option.id);
                     handleClick();
                   }}
                 >
@@ -109,5 +119,3 @@ function App() {
 }
 
 export default App;
-
-//
