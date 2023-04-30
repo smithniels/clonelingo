@@ -89,10 +89,14 @@ h3 {
   background-color:lightblue;
 }
 
-.success{
-  background-color: green;
+.correct-option:hover{
+  background-color: white !important;
+  color:black !important;
+  font-weight: 900 !important;
+  /* color: white !important; */
 }
 
-.unsuccess{
-  background-color:red;
+.incorrect-option{
+  background-color:RGB(218,41,28) !important;
+  color: white !important;
 }

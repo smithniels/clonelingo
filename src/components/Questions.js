@@ -460,7 +460,7 @@ let Questions = [
       {
         id: 1,
         text: 'nogensinde', // ever
-        isCorrect: true,
+        isCorrect: false,
       },
       {
         id: 2,
@@ -585,7 +585,7 @@ let Questions = [
       },
       {
         id: 1,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
@@ -595,7 +595,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -655,12 +655,12 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
@@ -745,7 +745,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -951,11 +951,11 @@ let Questions = [
     ],
   },
   {
-    text: '',
+    text: 'REPLACEME',
     options: [
       {
         id: 0,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: true,
       },
       {
@@ -965,37 +965,37 @@ let Questions = [
       },
       {
         id: 2,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
   },
   {
-    text: '',
+    text: 'REPLACEME',
     options: [
       {
         id: 0,
-        text: '', //  (
+        text: 'REPLACEME', //  (
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: true,
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1005,12 +1005,12 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '', //  (
+        text: 'REPLACEME', //  (
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
@@ -1020,7 +1020,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1045,7 +1045,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: true,
       },
     ],
@@ -1070,7 +1070,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1085,17 +1085,17 @@ let Questions = [
       },
       {
         id: 1,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 3,
-        text: '', //
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
