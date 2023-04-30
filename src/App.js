@@ -35,6 +35,7 @@ function App() {
   const optionClicked = (isCorrect) => {
     // change color (at some point this will work...)
     if (isCorrect) {
+      setTimeout(() => {}, 10000);
       console.log('correct!');
     } else {
       console.log('incorrect!');
@@ -89,16 +90,10 @@ function App() {
               return (
                 <li
                   key={option.id}
-                  // className={classNames('question-card', {{
-                  //     isCorrect:  {success},
-                  //     !isCorrect: {unsuccess}
-                  // }})} // no idea
-                  //   style={{ backgroundColor }}
                   onClick={() => {
                     optionClicked(option.isCorrect);
                     !isActive;
-
-                    handleClick(); //
+                    handleClick();
                   }}
                 >
                   {option.text}

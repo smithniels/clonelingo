@@ -414,7 +414,7 @@ let Questions = [
       },
       {
         id: 2,
-        text: 'et ansvar', // responsibility
+        text: 'ansvar', // responsibility
         isCorrect: true,
       },
       {
@@ -580,7 +580,7 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '', //  (
+        text: 'undskyldning', // apology
         isCorrect: false,
       },
       {
@@ -590,7 +590,7 @@ let Questions = [
       },
       {
         id: 2,
-        text: 'ental', //
+        text: 'ental', // singular
         isCorrect: true,
       },
       {
@@ -630,12 +630,12 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '	', // usual
+        text: 'sædvanlig', // usual
         isCorrect: false,
       },
       {
         id: 1,
-        text: 'nyde', //
+        text: 'nyde', // enjoy
         isCorrect: true,
       },
       {
@@ -645,7 +645,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '	', //
+        text: 'måle', // measure
         isCorrect: true,
       },
     ],
@@ -670,7 +670,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'uventet', // unexpected
         isCorrect: false,
       },
     ],
@@ -680,12 +680,12 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '', //
+        text: 'pludselig', // sudden
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'forventet', // expected
         isCorrect: false,
       },
       {
@@ -695,7 +695,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'forudsigelig', // predictable
         isCorrect: false,
       },
     ],
@@ -705,7 +705,7 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: 'punktum',
+        text: 'punktum', // period
         isCorrect: true,
       },
       {
@@ -740,7 +740,7 @@ let Questions = [
       },
       {
         id: 2,
-        text: '', //
+        text: 'berørt', // affected
         isCorrect: false,
       },
       {
@@ -755,12 +755,12 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '', //  (
+        text: 'kompliceret', //  complicated
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'forvirret', // confused
         isCorrect: false,
       },
       {
@@ -770,7 +770,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: '', //
+        text: 'fuldendt', // completed
         isCorrect: false,
       },
     ],
@@ -930,7 +930,7 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: '',
+        text: 'under', // under
         isCorrect: false,
       },
       {
@@ -945,7 +945,7 @@ let Questions = [
       },
       {
         id: 3,
-        text: 'nedenfor', //
+        text: 'nedenfor', // below
         isCorrect: true,
       },
     ],
@@ -1001,7 +1001,7 @@ let Questions = [
     ],
   },
   {
-    text: '',
+    text: 'Include',
     options: [
       {
         id: 0,
@@ -1015,7 +1015,7 @@ let Questions = [
       },
       {
         id: 2,
-        text: '', //
+        text: 'omfatte', //
         isCorrect: true,
       },
       {
@@ -1060,7 +1060,7 @@ let Questions = [
       },
       {
         id: 1,
-        text: '', //
+        text: 'forsvinde', // disappear
         isCorrect: false,
       },
       {
@@ -1076,11 +1076,11 @@ let Questions = [
     ],
   },
   {
-    text: '',
+    text: 'Influence',
     options: [
       {
         id: 0,
-        text: '',
+        text: 'indflydelse', // influence
         isCorrect: true,
       },
       {
@@ -1105,22 +1105,22 @@ let Questions = [
     options: [
       {
         id: 1,
-        text: '', //
+        text: 'angreb', // assault
         isCorrect: false,
       },
       {
         id: 0,
-        text: 'forbrydelser',
+        text: 'forbrydelser', // crime
         isCorrect: true,
       },
       {
         id: 2,
-        text: '', //
+        text: 'tyveri', // theft
         isCorrect: false,
       },
       {
         id: 3,
-        text: '', //
+        text: 'offer', // victim
         isCorrect: false,
       },
     ],
@@ -1130,7 +1130,7 @@ let Questions = [
     options: [
       {
         id: 0,
-        text: 'erklærer', //
+        text: 'erklærer', // declares
         isCorrect: true,
       },
       {
@@ -1140,12 +1140,12 @@ let Questions = [
       },
       {
         id: 2,
-        text: '', //
+        text: 'demonstrere', // demonstrate
         isCorrect: false,
       },
       {
         id: 3,
-        text: '', //
+        text: 'indflydelse', // influence
         isCorrect: false,
       },
     ],
@@ -1165,12 +1165,12 @@ let Questions = [
       },
       {
         id: 2,
-        text: 'udelukke', //
+        text: 'udelukke', // exclude
         isCorrect: true,
       },
       {
         id: 3,
-        text: '', //
+        text: 'slette', // erase
         isCorrect: false,
       },
     ],
@@ -1220,32 +1220,32 @@ let Questions = [
       },
       {
         id: 3,
-        text: '	', //
+        text: 'skinnende', // shiny
         isCorrect: true,
       },
     ],
   },
   {
-    text: '',
+    text: 'Shoulder',
     options: [
       {
         id: 0,
-        text: '', //
+        text: 'ryg', // back
         isCorrect: false,
       },
       {
         id: 1,
-        text: '', //
+        text: 'knæ', // knee
         isCorrect: false,
       },
       {
         id: 2,
-        text: '', //
+        text: 'skulder', // shoulder
         isCorrect: true,
       },
       {
         id: 3,
-        text: '', //
+        text: 'fod', // foot
         isCorrect: false,
       },
     ],
