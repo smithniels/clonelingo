@@ -10,6 +10,7 @@ Adding onClick event for answers where if the {option.isCorrect}
 // TODO: add hover  --> color change for answers or add in a border (black?) while answers are bing hovered
 
 // investigate consulting contracts with vacations days
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
