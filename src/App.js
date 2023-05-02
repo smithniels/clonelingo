@@ -1,20 +1,13 @@
-// TODO: make text colors change depending on correct-ness
 // --> scribbles <---
-/*
-Adding onClick event for answers where if the {option.isCorrect}
- then do greenCorrect function 
- else redIncorrect function
-    */
 // TODO: randomize question answers (probably create a new "words" JSON file)
 // TODO: add in a progress bar
-// TODO: add hover  --> color change for answers or add in a border (black?) while answers are bing hovered
-
-// investigate consulting contracts with vacations days
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 function App() {
   // Properties
@@ -57,7 +50,16 @@ function App() {
   };
 
   useEffect(() => {
-    // Reset selected option and isActive after 1 second
+    // Reset selected option and isActive after 1 second after selection is made
+    if (selectedOption !== null) {
+      setTimeout(() => {
+        setSelectedOption(null);
+        setIsActive(false);
+      }, 1000);
+    }
+  }, [selectedOption]);
+
+  useEffect(() => {
     if (selectedOption !== null) {
       setTimeout(() => {
         setSelectedOption(null);
@@ -112,6 +114,7 @@ function App() {
               );
             })}
           </ul>
+          {/* {ProgressBar} */}
           <h2>Score: {score}</h2>
         </div>
       )}

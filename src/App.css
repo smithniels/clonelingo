@@ -29,13 +29,16 @@ ul {
 }
 
 .question-text {
-  font-size: 15px;
+  font-size: 15px; 
+  padding-top: 10%;
 }
 
 .question-card h2 {
   font-size: 20px;
   font-weight: 500;
   margin: 0;
+
+  padding: 10% 0px 10% 0px ;
   color:RGB(218,41,28) !important;
 }
 

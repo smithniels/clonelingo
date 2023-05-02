@@ -125,7 +125,7 @@ const Questions = [
     ],
   },
   {
-    text: 'Deliver',
+    text: 'Spring (season)',
     options: [
       {
         id: 0,
@@ -134,7 +134,7 @@ const Questions = [
       },
       {
         id: 1,
-        text: 'aflevere',
+        text: 'foråret',
         isCorrect: true,
       },
       {
@@ -464,8 +464,8 @@ const Questions = [
       },
       {
         id: 2,
-        text: '	sædvanlig', // usual
-        isCorrect: false,
+        text: 'hyppigt', // frequently
+        isCorrect: true,
       },
       {
         id: 3,
@@ -1221,7 +1221,7 @@ const Questions = [
       {
         id: 3,
         text: 'skinnende', // shiny
-        isCorrect: true,
+        isCorrect: false,
       },
     ],
   },
