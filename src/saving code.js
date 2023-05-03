@@ -1,14 +1,16 @@
 // --> scribbles <---
 // TODO: randomize question answers (probably create a new "words" JSON file)
 // TODO: add in a progress bar
+// TODO: Favicon
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import styled from 'styled-components';
-// import { ProgressBar } from 'react-bootstrap';
+import styled from 'styled-components';
+
+import { ProgressBar, Button } from 'react-bootstrap';
 
 function App() {
   // Properties
@@ -17,7 +19,15 @@ function App() {
   const [score, setScore] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [progress, setProgress] = useState(0);
+
+  const StyledButton = styled(Button)`
+    color: palevioletred;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+  `;
 
   // Helper functions
   const handleClick = () => {
@@ -31,8 +41,6 @@ function App() {
     }
     // Set selected option
     setSelectedOption(optionId);
-    // setProgress
-    setProgress(progress + 1);
     // Wait for 1 second
     setTimeout(() => {
       // Move to next question or show results
@@ -52,15 +60,9 @@ function App() {
     setCurrentQuestion(0);
     setShowResults(false);
   };
+  50;
 
-  // const StyledProgressBar = styled(ProgressBar)`
-  //   color: palevioletred;
-  //   font-size: 1em;
-  //   margin: 1em;
-  //   padding: 0.25em 1em;
-  //   border: 2px solid palevioletred;
-  //   border-radius: 3px;
-  // `;
+  const percentage = '0';
 
   useEffect(() => {
     // Reset selected option and isActive after 1 second after selection is made
@@ -118,10 +120,15 @@ function App() {
               );
             })}
           </ul>
+          <div className='progressBar'>
+            <ProgressBar
+              // now={{ {currentQuestion } } + '%'}
 
-          <span>{progress}</span>
-          {/* <div className='progressBar' label='30'></div>
-          <StyledProgressBar></StyledProgressBar> */}
+              label={percentage}
+              animated
+            />
+            <StyledButton>text</StyledButton>
+          </div>
           <h2>Score: {score}</h2>
         </div>
       )}
