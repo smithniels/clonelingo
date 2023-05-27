@@ -6,9 +6,14 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
+<<<<<<< HEAD
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import styled from 'styled-components';
 // import { ProgressBar, Button } from 'react-bootstrap';
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
+>>>>>>> parent of 8ac618d (setProgress and other rf)
 
 function App() {
   // Properties
@@ -17,7 +22,6 @@ function App() {
   const [score, setScore] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [progress, setProgress] = useState(0);
 
   // Helper functions
   const handleClick = () => {
@@ -29,7 +33,11 @@ function App() {
       setScore(score + 1);
     }
     setSelectedOption(optionId);
+<<<<<<< HEAD
     setProgress(progress + 1);
+=======
+    // Wait for 1 second
+>>>>>>> parent of 8ac618d (setProgress and other rf)
     setTimeout(() => {
       if (currentQuestion + 1 < RandArray.length) {
         setCurrentQuestion(currentQuestion + 1);
@@ -47,6 +55,7 @@ function App() {
     setShowResults(false);
   };
 
+<<<<<<< HEAD
   // const StyledButton = styled(Button)`
   //   font-size: 1em;
   //   margin: 1em;
@@ -56,6 +65,17 @@ function App() {
   // `;
 
   // reset
+=======
+>>>>>>> parent of 8ac618d (setProgress and other rf)
+  useEffect(() => {
+    if (selectedOption !== null) {
+      setTimeout(() => {
+        setSelectedOption(null);
+        setIsActive(false);
+      }, 1000);
+    }
+  }, [selectedOption]);
+
   useEffect(() => {
     if (selectedOption !== null) {
       setTimeout(() => {
@@ -110,12 +130,16 @@ function App() {
               );
             })}
           </ul>
+<<<<<<< HEAD
           {/* <StyledButton>text</StyledButton> */}
           {/* <div className='progressBar'>
             {' '}
             <ProgressBar></ProgressBar>
           </div>
           <span>{progress}</span> */}
+=======
+          {/* {ProgressBar} */}
+>>>>>>> parent of 8ac618d (setProgress and other rf)
           <h2>Score: {score}</h2>
         </div>
       )}
