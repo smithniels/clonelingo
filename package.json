@@ -4,9 +4,6 @@
   "private": true,
   "dependencies": {
     "@syncfusion/ej2-react-progressbar": "^21.1.37",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
     "git": "^0.1.5",

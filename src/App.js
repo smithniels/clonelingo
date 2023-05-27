@@ -6,9 +6,9 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styled from 'styled-components';
-import { ProgressBar, Button } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import styled from 'styled-components';
+// import { ProgressBar, Button } from 'react-bootstrap';
 
 function App() {
   // Properties
@@ -47,13 +47,13 @@ function App() {
     setShowResults(false);
   };
 
-  const StyledButton = styled(Button)`
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.25em 1em;
-    border: 2px solid palevioletred;
-    border-radius: 3px;
-  `;
+  // const StyledButton = styled(Button)`
+  //   font-size: 1em;
+  //   margin: 1em;
+  //   padding: 0.25em 1em;
+  //   border: 2px solid palevioletred;
+  //   border-radius: 3px;
+  // `;
 
   // reset
   useEffect(() => {
@@ -110,12 +110,12 @@ function App() {
               );
             })}
           </ul>
-          <StyledButton>text</StyledButton>
-          <div className='progressBar'>
+          {/* <StyledButton>text</StyledButton> */}
+          {/* <div className='progressBar'>
             {' '}
             <ProgressBar></ProgressBar>
           </div>
-          <span>{progress}</span>
+          <span>{progress}</span> */}
           <h2>Score: {score}</h2>
         </div>
       )}

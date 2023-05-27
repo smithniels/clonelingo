@@ -1,25 +1,27 @@
 const Questions = [
   {
-    text: 'Section',
+    text: 'Apparently',
     options: [
       {
         id: 0,
         text: 'anbefale',
         isCorrect: false,
       },
-      {
+      {[
+      l;l
+      ]
         id: 1,
         text: 'almindelige',
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'atten',
+        text: 'atten', // eighteen
         isCorrect: false,
       },
       {
         id: 3,
-        text: 'afsnit',
+        text: 'tilsyneladende',
         isCorrect: true,
       },
     ],
@@ -50,11 +52,11 @@ const Questions = [
     ],
   },
   {
-    text: 'Recommend',
+    text: 'Experience',
     options: [
       {
         id: 0,
-        text: 'anbefale',
+        text: 'oplevelse',
         isCorrect: true,
       },
       {
@@ -64,7 +66,7 @@ const Questions = [
       },
       {
         id: 2,
-        text: 'kæmpestore',
+        text: 'anbefale',
         isCorrect: false,
       },
       {
