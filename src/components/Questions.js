@@ -7,9 +7,7 @@ const Questions = [
         text: 'anbefale',
         isCorrect: false,
       },
-      {[
-      l;l
-      ]
+      {
         id: 1,
         text: 'almindelige',
         isCorrect: false,
