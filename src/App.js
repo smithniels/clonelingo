@@ -7,9 +7,14 @@ import './App.css';
 import RandArray from './components/Randomizer.js';
 import classNames from 'classnames';
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import styled from 'styled-components';
 // import { ProgressBar, Button } from 'react-bootstrap';
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
+>>>>>>> parent of 8ac618d (setProgress and other rf)
 =======
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import ProgressBar from 'react-bootstrap/ProgressBar';
@@ -34,8 +39,11 @@ function App() {
     }
     setSelectedOption(optionId);
 <<<<<<< HEAD
+<<<<<<< HEAD
     setProgress(progress + 1);
 =======
+=======
+>>>>>>> parent of 8ac618d (setProgress and other rf)
     // Wait for 1 second
 >>>>>>> parent of 8ac618d (setProgress and other rf)
     setTimeout(() => {
@@ -56,6 +64,7 @@ function App() {
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   // const StyledButton = styled(Button)`
   //   font-size: 1em;
   //   margin: 1em;
@@ -65,6 +74,17 @@ function App() {
   // `;
 
   // reset
+=======
+>>>>>>> parent of 8ac618d (setProgress and other rf)
+  useEffect(() => {
+    if (selectedOption !== null) {
+      setTimeout(() => {
+        setSelectedOption(null);
+        setIsActive(false);
+      }, 1000);
+    }
+  }, [selectedOption]);
+
 =======
 >>>>>>> parent of 8ac618d (setProgress and other rf)
   useEffect(() => {
@@ -131,12 +151,16 @@ function App() {
             })}
           </ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
           {/* <StyledButton>text</StyledButton> */}
           {/* <div className='progressBar'>
             {' '}
             <ProgressBar></ProgressBar>
           </div>
           <span>{progress}</span> */}
+=======
+          {/* {ProgressBar} */}
+>>>>>>> parent of 8ac618d (setProgress and other rf)
 =======
           {/* {ProgressBar} */}
 >>>>>>> parent of 8ac618d (setProgress and other rf)
