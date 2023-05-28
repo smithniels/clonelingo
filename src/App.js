@@ -1,7 +1,13 @@
 // --> scribbles <---
 // TODO: randomize question answers (probably create a new "words" JSON file)
 // TODO: add in a progress bar
+<<<<<<< HEAD
 
+=======
+// TODO: add hover  --> color change for answers or add in a border (black?) while answers are bing hovered
+
+// investigate consulting contracts with vacations days
+>>>>>>> parent of d8e7fdf (finished the 50 questions)
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import RandArray from './components/Randomizer.js';

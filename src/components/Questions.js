@@ -1,4 +1,4 @@
-const Questions = [
+let Questions = [
   {
     text: 'Section',
     options: [
@@ -530,22 +530,22 @@ const Questions = [
     options: [
       {
         id: 0,
-        text: 'syv', // seven
+        text: 'syv',
         isCorrect: false,
       },
       {
         id: 1,
-        text: 'nitten', // nineteen
+        text: 'nitten', //
         isCorrect: true,
       },
       {
         id: 2,
-        text: 'seksten', // sixteen
+        text: 'seksten', //
         isCorrect: false,
       },
       {
         id: 3,
-        text: 'sytten', // seventeen
+        text: 'sytten', //
         isCorrect: false,
       },
     ],
@@ -585,7 +585,7 @@ const Questions = [
       },
       {
         id: 1,
-        text: 'nysgerrig', // curious
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
@@ -595,7 +595,7 @@ const Questions = [
       },
       {
         id: 3,
-        text: 'nogensinde', // ever
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -646,7 +646,7 @@ const Questions = [
       {
         id: 3,
         text: 'måle', // measure
-        isCorrect: false,
+        isCorrect: true,
       },
     ],
   },
@@ -655,17 +655,17 @@ const Questions = [
     options: [
       {
         id: 0,
-        text: 'sædvanlig', // usual
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 1,
-        text: 'forudsigelig', // predictable
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'mønster', // pattern
+        text: 'mønster', //
         isCorrect: true,
       },
       {
@@ -745,7 +745,7 @@ const Questions = [
       },
       {
         id: 3,
-        text: 'indkomst', // income
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -880,7 +880,7 @@ const Questions = [
     options: [
       {
         id: 0,
-        text: 'hjerneskade', // brain damage
+        text: 'hjerneskade',
         isCorrect: true,
       },
       {
@@ -951,51 +951,51 @@ const Questions = [
     ],
   },
   {
-    text: 'Asked',
+    text: 'REPLACEME',
     options: [
       {
         id: 0,
-        text: 'spurgt', // asked
+        text: 'REPLACEME', //
         isCorrect: true,
       },
       {
         id: 1,
-        text: 'sygeplejersker', // nurses
+        text: ' ', //a
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'slagter', // butcher
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 3,
-        text: 'landmand', // farmer
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
   },
   {
-    text: 'Wheel',
+    text: 'REPLACEME',
     options: [
       {
         id: 0,
-        text: 'mærke', //  brand
+        text: 'REPLACEME', //  (
         isCorrect: false,
       },
       {
         id: 1,
-        text: 'par', // pair
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'hjul', // wheel
+        text: 'REPLACEME', //
         isCorrect: true,
       },
       {
         id: 3,
-        text: 'udstyr', // equipment
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1005,22 +1005,22 @@ const Questions = [
     options: [
       {
         id: 0,
-        text: 'observere', //  observe
+        text: 'REPLACEME', //  (
         isCorrect: false,
       },
       {
         id: 1,
-        text: 'ridning', // riding
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'omfatte', // include
+        text: 'omfatte', //
         isCorrect: true,
       },
       {
         id: 3,
-        text: 'skjule', // hide
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1045,8 +1045,8 @@ const Questions = [
       },
       {
         id: 3,
-        text: 'sjov', // funny
-        isCorrect: false,
+        text: 'REPLACEME', //
+        isCorrect: true,
       },
     ],
   },
@@ -1070,7 +1070,7 @@ const Questions = [
       },
       {
         id: 3,
-        text: 'afgang', // take off
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1085,17 +1085,17 @@ const Questions = [
       },
       {
         id: 1,
-        text: 'afgang', // take off
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 2,
-        text: 'smuk', // pretty
+        text: 'REPLACEME', //
         isCorrect: false,
       },
       {
         id: 3,
-        text: 'alvorlig', // serious
+        text: 'REPLACEME', //
         isCorrect: false,
       },
     ],
@@ -1251,5 +1251,4 @@ const Questions = [
     ],
   },
 ];
-
 export default Questions;
